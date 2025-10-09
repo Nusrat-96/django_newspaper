@@ -1,0 +1,6 @@
+AbstractUser
+We can create a custom user model in four steps:
+update django_project/settings.py
+add a new CustomUser model
+add new forms for UserCreationForm and UserChangeForm
+update accounts/admin.py
