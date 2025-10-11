@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # 3rd Party
+    "crispy_forms", # new
+    "crispy_bootstrap5", # new
     'accounts',
     'pages'
 ]
@@ -104,6 +107,13 @@ AUTH_USER_MODEL = 'accounts.CustomUser'  # new Customer User model
 
 LOGIN_REDIRECT_URL = 'home'  # redirect to home page after login
 LOGOUT_REDIRECT_URL = 'home'  # redirect to home page after logout
+
+
+# Crispy Forms
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = "bootstrap5" # new
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
