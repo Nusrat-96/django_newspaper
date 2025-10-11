@@ -114,6 +114,8 @@ LOGOUT_REDIRECT_URL = 'home'  # redirect to home page after logout
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 CRISPY_TEMPLATE_PACK = "bootstrap5" # new
 
+#for password reset to email
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
