@@ -40,8 +40,10 @@ INSTALLED_APPS = [
     # 3rd Party
     "crispy_forms", # new
     "crispy_bootstrap5", # new
+    # Local
     'accounts',
-    'pages'
+    'pages',
+    'articles',
 ]
 
 MIDDLEWARE = [
@@ -122,8 +124,7 @@ EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
-
+TIME_ZONE = "America/New_York" # new
 USE_I18N = True
 
 USE_TZ = True
